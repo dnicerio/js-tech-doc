@@ -1,0 +1,112 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    position: fixed;
+    border-right: 3px solid gray;
+    width: 300px;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+#navbar header {
+    font-size: 1.8rem;
+    padding: 15px 0 15px 25px;
+    margin: 0;
+}
+
+#navbar ul {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+
+#navbar li {
+    list-style: none;
+    border-top: 1px solid gray;
+    position: relative;
+    padding: 5px 0 5px 20px;
+    margin: 0;
+}
+
+#navbar a {
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#main-doc {
+    position: absolute;
+    margin: 0 0 110px 310px;
+    padding: 20px;
+}
+
+#main-doc header {
+    font-size: 1.8rem;
+    text-align: left;
+    margin: 0;
+}
+
+section article {
+    margin: 15px;
+}
+
+section li {
+    margin: 15px;
+  }
+
+code {
+    display: block;
+    background-color: #f7f7f7;
+    line-height: 2;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+}
+
+@media (max-width: 480px) {
+    #navbar {
+        position: relative;
+        background-color: white;
+        height: 238px;
+        width: 100%;
+        max-width: 480px;
+        margin: 0;
+        padding: 0;
+        overflow-y: scroll;
+        border-right: none;
+        border-bottom: 3px solid black;
+    }
+
+    #navbar a {
+        padding: 10px 0;
+    }
+
+    #main-doc {
+        margin: 0 20px 50px 20px;
+        padding: 0;
+    }
+
+    #main-doc header {
+        font-size: 1.6rem;
+    }
+
+    section article {
+        margin: 15px 0;
+    }
+
+    section li {
+        margin: 15px 0;
+      }
+
+    code {
+        margin: 10px 0;
+        padding: 15px 0;
+    }
+}
